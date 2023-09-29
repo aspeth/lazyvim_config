@@ -27,8 +27,35 @@ return {
     },
   },
 
+  -- change some telescope options
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        layout_strategy = "horizontal",
+        layout_config = { prompt_position = "top" },
+        sorting_strategy = "ascending",
+        winblend = 0,
+      },
+    },
+  },
+
+  -- add telescope-fzf-native
+  {
+    "telescope.nvim",
+    dependencies = {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+      config = function()
+        require("telescope").load_extension("fzf")
+      end,
+    },
+  },
+
+  -- add rainbowline
   {
     "lukas-reineke/indent-blankline.nvim",
+    pin = true,
     opts = function(_, opts)
       -- Other blankline configuration here
       return require("indent-rainbowline").make_opts(opts)
