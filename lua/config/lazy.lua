@@ -29,7 +29,7 @@ require("lazy").setup({
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true,
-    notify = false,
+    notify = true,
   },
   performance = {
     rtp = {
