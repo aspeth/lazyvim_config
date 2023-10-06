@@ -52,19 +52,6 @@ return {
     },
   },
 
-  -- add rainbowline
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    pin = true,
-    opts = function(_, opts)
-      -- Other blankline configuration here
-      return require("indent-rainbowline").make_opts(opts)
-    end,
-    dependencies = {
-      "TheGLander/indent-rainbowline.nvim",
-    },
-  },
-
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
   {
