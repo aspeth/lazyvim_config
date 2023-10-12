@@ -5,11 +5,15 @@ return {
     priority = 1000,
     opts = {},
   },
-  -- Configure LazyVim to load gruvbox
+
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { term_colors = true } },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "nyoom-engineering/oxocarbon.nvim" },
   {
     "LazyVim/LazyVim",
+
     opts = {
-      colorscheme = "tokyonight-storm",
+      colorscheme = "tokyonight-moon",
     },
   },
 }
