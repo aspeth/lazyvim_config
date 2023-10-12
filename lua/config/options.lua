@@ -3,3 +3,7 @@
 -- Add any additional options here
 local opt = vim.opt
 opt.relativenumber = false
+
+-- doesn't currently work in warp :( works in iterm2 though so leaving it here in case warp adds support later
+opt.guicursor =
+  "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkoff400-blinkon250-Cursor/lCursor,sm:block--blinkoff150-blinkon175"
