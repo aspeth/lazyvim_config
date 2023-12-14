@@ -1,19 +1,21 @@
 return {
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-
-  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { term_colors = true } },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "nyoom-engineering/oxocarbon.nvim" },
-  {
-    "LazyVim/LazyVim",
-
-    opts = {
-      colorscheme = "tokyonight-moon",
-    },
-  },
+  --   { "mcchrish/zenbones.nvim", dependencies = {
+  --     "rktjmp/lush.nvim",
+  --   } },
+  --   {
+  --     "folke/tokyonight.nvim",
+  --     lazy = false,
+  --     priority = 1000,
+  --     opts = {},
+  --   },
+  --   { "fynnfluegge/monet.nvim" },
+  --   { "Shatur/neovim-ayu" },
+  --   { "ellisonleao/gruvbox.nvim" },
+  --   { "catppuccin/nvim", name = "catppuccin" },
+  --   {
+  --     "LazyVim/LazyVim",
+  --     opts = {
+  --       colorscheme = "tokyobones",
+  --     },
+  --   },
 }
