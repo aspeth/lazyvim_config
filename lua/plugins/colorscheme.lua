@@ -1,4 +1,12 @@
 return {
+  --
+  --   {
+  --     "kaiuri/nvim-juliana",
+  --     lazy = false,
+  --     opts = { --[=[ configuration --]=]
+  --     },
+  --     config = true,
+  --   },
   --   { "mcchrish/zenbones.nvim", dependencies = {
   --     "rktjmp/lush.nvim",
   --   } },
@@ -12,10 +20,10 @@ return {
   --   { "Shatur/neovim-ayu" },
   --   { "ellisonleao/gruvbox.nvim" },
   --   { "catppuccin/nvim", name = "catppuccin" },
-  --   {
-  --     "LazyVim/LazyVim",
-  --     opts = {
-  --       colorscheme = "tokyobones",
-  --     },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "tokyonight-moon",
   --   },
+  -- },
 }
