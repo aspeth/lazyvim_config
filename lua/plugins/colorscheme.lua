@@ -20,10 +20,15 @@ return {
   --   { "Shatur/neovim-ayu" },
   --   { "ellisonleao/gruvbox.nvim" },
   --   { "catppuccin/nvim", name = "catppuccin" },
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "tokyonight-moon",
-  --   },
-  -- },
+  -- { "LunarVim/synthwave84" },
+  { "rebelot/kanagawa.nvim" },
+  { "miikanissi/modus-themes.nvim", priority = 1000 },
+  { "ramojus/mellifluous.nvim", priority = 1000 },
+  { "askfiy/killer-queen" },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "killer-queen",
+    },
+  },
 }
