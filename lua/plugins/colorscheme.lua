@@ -21,14 +21,14 @@ return {
   --   { "ellisonleao/gruvbox.nvim" },
   --   { "catppuccin/nvim", name = "catppuccin" },
   -- { "LunarVim/synthwave84" },
-  { "rebelot/kanagawa.nvim" },
-  { "miikanissi/modus-themes.nvim", priority = 1000 },
-  { "ramojus/mellifluous.nvim", priority = 1000 },
-  { "askfiy/killer-queen" },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "killer-queen",
-    },
-  },
+  -- { "rebelot/kanagawa.nvim" },
+  -- { "miikanissi/modus-themes.nvim", priority = 1000 },
+  -- { "ramojus/mellifluous.nvim", priority = 1000 },
+  -- { "askfiy/killer-queen" },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "killer-queen",
+  --   },
+  -- },
 }
