@@ -1,9 +1,10 @@
 return {
-  { "oxfist/night-owl.nvim", lazy = false, opts = { transparent_background = true } },
-  -- { "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
-  -- { "catppuccin/nvim", name = "catppuccin", opts = { transparent_background = true } },
-  -- { "rose-pine/neovim", name = "rose-pine", opts = { styles = { transparency = true } } },
-  -- { "EdenEast/nightfox.nvim", opts = { transparent = true } },
+  -- { "oxfist/night-owl.nvim", lazy = false, opts = { transparent_background = true } },
+  { "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
+  -- { "folke/tokyonight.nvim", lazy = false, priority = 1000 },
+  -- -- { "catppuccin/nvim", name = "catppuccin", opts = { transparent_background = true } },
+  -- -- { "rose-pine/neovim", name = "rose-pine", opts = { styles = { transparency = true } } },
+  -- -- { "EdenEast/nightfox.nvim", opts = { transparent = true } },
   -- {
   --   "eldritch-theme/eldritch.nvim",
   --   lazy = false,
@@ -13,7 +14,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "night-owl",
+      colorscheme = "tokyonight",
     },
   },
 }
