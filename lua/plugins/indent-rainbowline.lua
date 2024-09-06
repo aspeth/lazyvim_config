@@ -4,7 +4,7 @@ return {
     -- Other blankline configuration here
     return require("indent-rainbowline").make_opts(opts, {
       -- How transparent should the rainbow colors be. 1 is completely opaque, 0 is invisible. 0.07 by default
-      color_transparency = 0.18,
+      color_transparency = 0.12,
       colors = {
         0xFFFFBA, -- Pastel Yellow
         0xBAFFC9, -- Pastel Green

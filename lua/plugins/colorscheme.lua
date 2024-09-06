@@ -1,5 +1,5 @@
 return {
-  -- { "oxfist/night-owl.nvim", lazy = false, opts = { transparent_background = true } },
+  { "oxfist/night-owl.nvim", lazy = false, opts = { transparent_background = true, italics = false } },
   { "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
   -- { "folke/tokyonight.nvim", lazy = false, priority = 1000 },
   -- -- { "catppuccin/nvim", name = "catppuccin", opts = { transparent_background = true } },
@@ -11,10 +11,11 @@ return {
   --   priority = 1000,
   --   opts = { transparent = true },
   -- },
+  -- { "Tsuzat/NeoSolarized.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "night-owl",
     },
   },
 }
