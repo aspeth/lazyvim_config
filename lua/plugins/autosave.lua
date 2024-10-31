@@ -4,10 +4,11 @@ return {
     cmd = "ASToggle", -- optional for lazy loading on command
     event = { "InsertLeave", "TextChanged" }, -- optional for lazy loading on trigger events
     opts = {
-      -- turn off auto-save message
-      execution_message = {
-        enabled = false,
-      },
+      -- exclude Harpoon menu so it doesn't auto-close
+      -- https://github.com/ThePrimeagen/harpoon/issues/366#issuecomment-1997208824
+      condition = function(buf)
+        return require("auto-save.utils.data").not_in(vim.fn.getbufvar(buf, "&filetype"), { "harpoon" })
+      end,
     },
   },
 }
