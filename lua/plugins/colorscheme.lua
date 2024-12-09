@@ -13,10 +13,10 @@ return {
   --   opts = { transparent = true },
   -- },
   -- { "Tsuzat/NeoSolarized.nvim", lazy = false, priority = 1000, opts = { transparent = true } },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "rose-pine",
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "rose-pine",
+  --   },
+  -- },
 }
