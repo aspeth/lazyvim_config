@@ -28,23 +28,26 @@ return {
           root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
         },
         sqlls = {},
-        -- solargraph = {
-        --   -- See: https://medium.com/@cristianvg/neovim-lsp-your-rbenv-gemset-and-solargraph-8896cb3df453
-        --   cmd = { os.getenv("HOME") .. "/.asdf/shims/solargraph", "stdio" },
-        --   root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
-        --   settings = {
-        --     solargraph = {
-        --       autoformat = true,
-        --       completion = true,
-        --       diagnostics = false,
-        --       folding = true,
-        --       references = true,
-        --       rename = true,
-        --       symbols = true,
-        --     },
-        --   },
-        -- },
-        ts_ls = {},
+        ts_ls = {
+          init_options = {
+            plugins = {
+              {
+                name = "@vue/typescript-plugin",
+                location = "",
+                languages = { "vue" },
+              },
+            },
+          },
+          filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+        },
+        volar = {
+          cmd = { "pnpm", "vue-language-server", "--stdio" },
+          init_options = {
+            vue = {
+              hybridMode = true,
+            },
+          },
+        },
         yamlls = {},
       },
     },
